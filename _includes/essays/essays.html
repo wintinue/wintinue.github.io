@@ -8,20 +8,32 @@
 
     <div class="row g-3">
       {% assign essay_pages = site.pages | where: "type", "essay" | sort: "date" | reverse %}
+      {% assign has_essays = false %}
       {% for page in essay_pages %}
         {% unless page.draft %}
-          {% include essays/essay-card.html page=page %}
+          {% if page.published == true %}
+            {% assign has_essays = true %}
+            {% include essays/essay-card.html page=page %}
+          {% endif %}
         {% endunless %}
         {% if forloop.index == include.limit %}
           {% break %}
         {% endif %}
       {% endfor %}
+      
+      {% unless has_essays %}
+        <div class="col-12 text-center py-5">
+          <p class="lead">Essays are loading... Stay tuned for thoughts on code, career, and curiosity.</p>
+        </div>
+      {% endunless %}
     </div>
 
     {% assign not_draft = 0 %}
       {% for page in essay_pages %}
       {% unless page.draft %}
-        {% assign not_draft = not_draft | plus: 1 %}
+        {% if page.published == true %}
+          {% assign not_draft = not_draft | plus: 1 %}
+        {% endif %}
       {% endunless %}
     {% endfor %}
 

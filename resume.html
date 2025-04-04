@@ -36,7 +36,20 @@ layout: home
       </div>
     </div>
 
-    <div class="row pt-4 align-items-center">
+    <div class="row pt-4 align-items-start">
+      <div class="col-lg-3">
+        <h1 class="display-6 text-start m-0">About me</h1>
+      </div>
+      <div class="col-lg-9">
+        {% for entry in site.data.bio.basics.summaryLong %}
+          <p class="m-0 long-summary-entry">
+            {{ entry }}
+          </p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="row pt-4 align-items-start">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">Interests</h1>
       </div>
@@ -52,7 +65,7 @@ layout: home
     </div>
 
     {% if site.data.bio.skills %}
-    <div class="row pt-4 align-items-center">
+    <div class="row pt-4 align-items-start">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">Skills</h1>
       </div>
@@ -111,7 +124,7 @@ layout: home
     </div>
     {% endif %}
 
-    {% if site.data.bio.work %}
+    <!-- {% if site.data.bio.work %}
     <div class="row pt-4 align-items-start">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">Work</h1>
@@ -152,9 +165,9 @@ layout: home
         {% endfor %}
       </div>
     </div>
-    {% endif %}
+    {% endif %} -->
 
-    {% if site.data.bio.volunteer %}
+    <!-- {% if site.data.bio.volunteer %}
       <div class="row pt-4 align-items-start">
         <div class="col-lg-3">
           <h1 class="display-6 text-start m-0">Activities</h1>
@@ -195,7 +208,7 @@ layout: home
           {% endfor %}
         </div>
       </div>
-    {% endif %}
+    {% endif %} -->
 
     {% if site.data.bio.awards %}
     <div class="row pt-4 align-items-start">
@@ -223,7 +236,7 @@ layout: home
     </div>
     {% endif %}
 
-    {% if site.data.bio.references %}
+    <!-- {% if site.data.bio.references %}
     <div class="row pt-4 align-items-center">
       <div class="col-lg-3">
         <h1 class="display-6 text-start m-0">References</h1>
@@ -240,6 +253,31 @@ layout: home
         </p>
       </div>
     </div>
-    {% endif %}
+    {% endif %} -->
+
+
+
+    <div class="row pt-4 align-items-start">
+      <div class="col-lg-3">
+        <h1 class="display-6 text-start m-0">Resume</h1>
+      </div>
+      <div class="col-lg-9">
+        <p class="my-1">
+        For a comprehensive overview of my professional background and qualifications, please refer to my detailed resume below.
+        </p>
+        <p class="my-1">
+          {% assign latest_resume_en = site.static_files | where_exp: "file", "file.path contains '/resources/resume/en/'" | sort: "name" | last %}
+          <a href="{{ site.baseurl }}{{ latest_resume_en.path }}" target="_blank" class="d-inline-flex align-items-center">Download English Resume<svg class="tf-social ms-1 my-1">
+           <use xlink:href="{{ '/img/bootstrap-icons.svg' | prepend: site.baseurl }}#filetype-pdf"/>
+         </svg></a>
+         </p>
+         <p class="my-1">
+           {% assign latest_resume_ko = site.static_files | where_exp: "file", "file.path contains '/resources/resume/ko/'" | sort: "name" | last %}
+           <a href="{{ site.baseurl }}{{ latest_resume_ko.path }}" target="_blank" class="d-inline-flex align-items-center">Download Korean Resume<svg class="tf-social ms-1 my-1">
+            <use xlink:href="{{ '/img/bootstrap-icons.svg' | prepend: site.baseurl }}#filetype-pdf"/>
+          </svg></a>
+          </p>
+      </div>
+    </div>
   </div>
 </div>

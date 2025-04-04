@@ -1,44 +1,60 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
-    "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "name": "Gyueun Kim",
+    "label": "Software Enginner/Architect <a href='https://www.concentrix.com/' target='_blank'>@Concentrix</a>",
+    "picture": "/img/profile.png",
+    "email": "gyueun.k@gmail.com",
+    "phone": "",
+    "website": "https://wintinue.github.io",
+    "summary": "\"Solving problems through the tool of development\"<br>Passionate about automation, structuring, and refactoring to improve recurring tasks and inefficient processes.",
+    "summaryLong": [
+      "I approach software development as a powerful tool for solving real-world problems, which has driven me to become versatile across multiple technology stacks and business domains.",
+      "With a track record of delivering under pressure—including launching complete services in just 8 weeks and automating deployment and API documentation processes—I consistently find efficient paths to valuable solutions.",
+      "I thrive in collaborative environments where team alignment is prioritized, and I actively contribute to creating spaces where open, honest communication drives our collective problem-solving efforts."  
+    ],
+    "location": { "address": "", "postalCode": "", "city": "Seoul", "countryCode": "KR", "region": "South Korea" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      { "network": "github", "username": "wintinue", "url": "http://github.com/wintinue" },
+      { "network": "linkedin", "username": "gyueun kim", "url": "http://linkedin.com/in/gyueun-kim" }
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Architecture & Design" },
+    { "name": "Data Analysis" },
+    { "name": "Automation" },
+    { "name": "Cloud & DevOps" },
+    { "name": "MCP(Model Context Protocol)" },
+    { "name": "PKM(Personal Knowledge Management)" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "JavaScript", "Node.js", "RESTful API", "Nest.js", "TypeScript", "FastAPI", "Python", "PHP" ]
+    },
+    {
+      "name": "Database",
+      "keywords": [ "MySQL", "Redis", "MariaDB", "PostgreSQL", "Memcached" ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywords": [ "AWS", "Docker", "CI/CD", "Jenkins", "Github Actions" ]
+    },
+    {
+      "name": "ETC",
+      "keywords": [ "Selenium", "BeautifulSoup", "OpenCV" ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "Linux", "Postman", "Swagger", "Notion", "Obsidian" ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2013-09-01",
-      "endDate": "Present",
+      "institution": "Academic Credit Bank System",
+      "area": "Business Administration and Management, General",
+      "studyType": "B.B.A",
+      "startDate": "2020-03-02",
+      "endDate": "2020-08-28",
       "courses": [
       ]
     }
@@ -98,16 +114,10 @@
   ],
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
-    },
-    {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "Grand(1st) Prize",
+      "date": "2021-08",
+      "awarder": "Cultural Heritage Administration of Korea",
+      "summary": "1st place (Grand Prize) in the Product and Service Development category at the Public Big Data Utilization Competition. Check out the <a href='projects/ulsuculture.html' target='_blank'>project page</a> for more details."
     }
   ],
   "references": [
